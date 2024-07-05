@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('bg2.png') no-repeat center center fixed; /* Add your background image here */
+    background-size: cover; /* This will ensure the background image covers the entire screen */
+    background-repeat: no-repeat; /* Ensure the background image does not repeat */
+    color: #333;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-content {
+    background: rgba(255, 255, 255, 0.8); /* Transparent background for main content */
+    flex: 2;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+#cityInput {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#searchButton {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#searchButton:hover {
+    background: #0056b3;
+}
+
+.weather-info, .forecast {
+    margin-top: 20px;
+}
+
+.current-weather {
+    background: rgb(241 243 243 / 28%);
+    color: #2a2429;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.forecast-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.forecast-item {
+    background: rgb(65 204 159 / 80%);
+    color: #2a2429;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: calc(20% - 20px);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error-message {
+    color: #ff3f3f;
+    margin-top: 20px;
+}
+
+.sidebar {
+    background: rgba(0, 51, 102, 0.8); /* Transparent background for sidebar */
+    color: #fff;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-content {
+    width: 100%;
+}
+
+.city-name-sidebar {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.extra-info {
+    margin-top: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-item i {
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+.forecast-icon {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px;
+    margin: 10px 0;
+}
+.cc {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.cs {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}

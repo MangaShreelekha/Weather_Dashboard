@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <div class="header">
+                <h1 class="title">Weather Dashboard</h1>
+                <div class="search">
+                    <input type="text" id="cityInput" placeholder="Enter city name">
+                    <button id="searchButton"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div id="weatherInfo" class="weather-info hidden">
+                <div class="current-weather">
+                    <div class="cc"><h2 id="cityName" class="city-name"></h2></div>
+                    <div class="cc"><p id="currentTemp" class="current-temp"></p></div>
+                    <div class="cc"><p id="currentHumidity" class="current-humidity"></p></div>
+                    <div class="cs"><p id="currentWind" class="current-wind"></p></div>
+                    <div class="cs"><p id="currentDescription" class="current-description"></p></div>
+                </div>
+            </div>
+            <div id="forecast" class="forecast hidden">
+                <h2>5-Day Forecast</h2>
+                <div id="forecastContainer" class="forecast-container"></div>
+            </div>
+            <p id="errorMessage" class="error-message hidden"></p>
+        </div>
+        <div class="sidebar hidden">
+            <div class="sidebar-content">
+                <h2 class="city-name-sidebar"></h2>
+                <p class="current-temp-sidebar"></p>
+                <p class="current-description-sidebar"></p>
+                <div class="extra-info">
+                    <div class="info-item">
+                        <i class="fas fa-tint"></i>
+                        <p id="humiditySidebar"></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-wind"></i>
+                        <p id="windSidebar"></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-cloud"></i>
+                        <p id="descriptionSidebar"></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-sun"></i>
+                        <p id="sunriseSidebar"></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-moon"></i>
+                        <p id="sunsetSidebar"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
