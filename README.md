@@ -37,7 +37,7 @@ This Weather Dashboard application allows users to search for a city and get the
 3. **Configure API Key**:
     - Open `main.js` and replace the placeholder API key with your actual API key:
     ```javascript
-    const apiKey = 'your_actual_api_key'; // Replace with your actual API key
+    const apiKey = '7d651b50a9fbd0020af145f45bea3aed'; // Replace with your actual API key
     ```
 
 4. **Run the Application**:
